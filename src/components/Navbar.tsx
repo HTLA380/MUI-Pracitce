@@ -12,7 +12,7 @@ import {
   styled,
 } from "@mui/material";
 import React, { useState } from "react";
-import profileImg from "../assets/htet-aung-lin.png";
+import profileImg from "../assets/users/profile1.png";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
