@@ -24,7 +24,7 @@ interface PostInterface {
 const Post: React.FC<PostInterface> = (props) => {
   const { profileImg, author, date, imageUrl, imageAlt, description } = props;
   return (
-    <Card sx={{ maxWidth: "45rem", my: "2rem" }}>
+    <Card sx={{ maxWidth: "45rem", my: "2rem", boxShadow: 3 }}>
       <CardHeader
         avatar={
           <Avatar
