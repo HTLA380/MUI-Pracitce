@@ -9,6 +9,7 @@ import {
   Storefront,
 } from "@mui/icons-material";
 import {
+  Box,
   List,
   ListItem,
   ListItemButton,
@@ -20,7 +21,7 @@ import React from "react";
 
 const Sidebar: React.FC = () => {
   return (
-    <div>
+    <Box flex={1} sx={{ display: { xs: "none", sm: "block" } }}>
       <List>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
@@ -87,7 +88,7 @@ const Sidebar: React.FC = () => {
           </ListItemButton>
         </ListItem>
       </List>
-    </div>
+    </Box>
   );
 };
 
