@@ -21,7 +21,7 @@ import React from "react";
 
 const Sidebar: React.FC = () => {
   return (
-    <Box flex={1} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box width={150} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
         <List>
           <ListItem disablePadding>

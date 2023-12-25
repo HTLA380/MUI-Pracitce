@@ -21,7 +21,7 @@ import {
 
 const Rightbar: React.FC = () => {
   return (
-    <Box flex={1} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box width={300} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed" top={0} right={0} width={300} p={"5rem 2rem"}>
         <Typography variant="h6" fontWeight="normal" mt={3}>
           Online Friends
