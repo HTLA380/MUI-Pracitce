@@ -4,7 +4,6 @@ import {
   Avatar,
   Badge,
   Box,
-  InputBase,
   Menu,
   MenuItem,
   Toolbar,
@@ -18,13 +17,6 @@ const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
 });
-
-const Search = styled("div")(({ theme }) => ({
-  backgroundColor: "white",
-  padding: "0 10px",
-  borderRadius: theme.shape.borderRadius,
-  width: "40%",
-}));
 
 const Icons = styled(Box)(({ theme }) => ({
   display: "none",
@@ -50,9 +42,6 @@ const Navbar: React.FC = () => {
           HTLA
         </Typography>
         <Pets sx={{ display: { xs: "block", sm: "none" } }} />
-        <Search>
-          <InputBase placeholder="search..." />
-        </Search>
         <Icons>
           <Badge badgeContent={4} color="error">
             <Mail />
