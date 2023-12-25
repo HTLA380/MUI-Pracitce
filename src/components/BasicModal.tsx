@@ -36,22 +36,14 @@ const BasicModal: React.FC<BasicModalInterface> = ({ open, setOpen }) => {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Create Post
           </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: 1,
-              my: 1,
-              pb: 1,
-              borderBottom: "1px solid #333",
-            }}>
+          <Stack flexDirection="row" alignItems="center" gap={1} my={1}>
             <Avatar
               sx={{ width: 30, height: 30 }}
               alt="Htet Aung Lin"
               src={profileImg}
             />
             <Typography>Htet Aung Lin</Typography>
-          </Box>
+          </Stack>
           <TextField
             multiline
             fullWidth
@@ -59,13 +51,11 @@ const BasicModal: React.FC<BasicModalInterface> = ({ open, setOpen }) => {
             placeholder="What's on your mind?"
             variant="standard"
           />
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginTop: 1,
-            }}>
+          <Stack
+            direction={"row"}
+            alignItems={"center"}
+            justifyContent="space-between"
+            mt={1}>
             <Stack direction="row" alignItems={"center"}>
               <Image color="info" fontSize="small" />
               <VideoCall color="error" fontSize="medium" />
@@ -73,7 +63,7 @@ const BasicModal: React.FC<BasicModalInterface> = ({ open, setOpen }) => {
             <Fab aria-label="add" size="small" color="primary">
               <Add />
             </Fab>
-          </Box>
+          </Stack>
         </Box>
       </Modal>
     </div>

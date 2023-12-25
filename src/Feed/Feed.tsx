@@ -5,6 +5,7 @@ import {
   CardContent,
   Container,
   Fab,
+  Stack,
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
@@ -25,28 +26,23 @@ const Feed: React.FC = () => {
           alignItems: "center",
         }}
         maxWidth="md">
-        <Card
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            width: "100%",
-            boxShadow: 3,
-          }}>
-          <CardContent>
-            <Typography variant="h5" fontSize={16} fontWeight={"medium"}>
-              Create Post
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Fab
-              aria-label="add"
-              size="small"
-              color="primary"
-              onClick={() => setOpen(true)}>
-              <Add />
-            </Fab>
-          </CardActions>
+        <Card sx={{ width: "100%" }}>
+          <Stack direction="row" justifyContent="space-between">
+            <CardContent>
+              <Typography variant="h5" fontSize={16} fontWeight={"medium"}>
+                Create Post
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Fab
+                aria-label="add"
+                size="small"
+                color="primary"
+                onClick={() => setOpen(true)}>
+                <Add />
+              </Fab>
+            </CardActions>
+          </Stack>
         </Card>
 
         <BasicModal open={open} setOpen={setOpen} />
