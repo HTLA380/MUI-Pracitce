@@ -19,7 +19,12 @@ import {
 } from "@mui/material";
 import React from "react";
 
-const Sidebar: React.FC = () => {
+interface SidebarInterface {
+  mode: string;
+  setMode: React.Dispatch<React.SetStateAction<"dark" | "light">>;
+}
+
+const Sidebar: React.FC<SidebarInterface> = ({ mode, setMode }) => {
   return (
     <Box width={150} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
@@ -85,7 +90,9 @@ const Sidebar: React.FC = () => {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch />
+              <Switch
+                onChange={() => setMode(mode === "light" ? "dark" : "light")}
+              />
             </ListItemButton>
           </ListItem>
         </List>

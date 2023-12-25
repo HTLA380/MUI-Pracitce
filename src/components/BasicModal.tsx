@@ -32,7 +32,7 @@ const BasicModal: React.FC<BasicModalInterface> = ({ open, setOpen }) => {
         onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description">
-        <Box sx={style}>
+        <Box sx={style} bgcolor={"background.default"} color={"text.primary"}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Create Post
           </Typography>
