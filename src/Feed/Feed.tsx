@@ -49,6 +49,7 @@ const Feed: React.FC = () => {
 
         {postData.map((data) => (
           <Post
+            key={data.author}
             author={data.author}
             profileImg={data.profileImg}
             date={data.date}
