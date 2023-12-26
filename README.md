@@ -4,4 +4,4 @@ This is a website which I developed to practice Material-UI, a React UI framewor
 
 ## Screenshots
 
-[screenShot](./src/assets/preview.png)
+![Project Preview](./src/assets/preview.png)
